@@ -3,8 +3,7 @@ import cv2
 
 card_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-path='idcard.png'
-img = cv2.imread(path)
+img = cv2.imread('idcard.png')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 rgb_image=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 
